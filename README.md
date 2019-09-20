@@ -1,2 +1,2 @@
-# -skeleton-react
+# skeleton-react
 Skeleton loading for react 
