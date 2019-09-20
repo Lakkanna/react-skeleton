@@ -1,0 +1,41 @@
+{
+  "name": "skeleton-react",
+  "version": "1.0.0",
+  "description": "Skeleton loading for react",
+  "main": "./dist/index.js",
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lakkanna/skeleton-react.git"
+  },
+  "keywords": [
+    "skeleton",
+    "react skeleton loader",
+    "loader",
+    "react",
+    "responsive loader",
+    "loading"
+  ],
+  "author": "Lakkanna Ramachandra Walikar <lakkannawalikar@gmail.com> (https://lakkanna.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lakkanna/skeleton-react/issues"
+  },
+  "homepage": "https://github.com/Lakkanna/skeleton-react#readme",
+  "peerDependencies": {
+    "react": "16.9.0"
+  },
+  "devDependencies": {
+    "@types/react": "16.9.2",
+    "@types/react-dom": "16.9.0",
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
+    "ts-loader": "6.1.1",
+    "typescript": "3.6.3",
+    "webpack": "4.40.2",
+    "webpack-cli": "3.3.9"
+  }
+}
