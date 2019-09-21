@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Lakkanna/skeleton-react.git"
+    "url": "git+https://github.com/Lakkanna/react-skeleton.git"
   },
   "keywords": [
     "skeleton",
@@ -23,9 +23,9 @@
   "author": "Lakkanna Ramachandra Walikar <lakkannawalikar@gmail.com> (https://lakkanna.github.io/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Lakkanna/skeleton-react/issues"
+    "url": "https://github.com/Lakkanna/react-skeleton/issues"
   },
-  "homepage": "https://github.com/Lakkanna/skeleton-react#readme",
+  "homepage": "https://github.com/Lakkanna/react-skeleton#readme",
   "peerDependencies": {
     "react": "16.9.0"
   },
