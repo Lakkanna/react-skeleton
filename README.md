@@ -2,14 +2,26 @@
 
 We all know that without loader in _React_ components, user interface will not complete. We usually show a spinner or a text informing that data is loading... better way to show a user that what our _ui_ look like in a _Skeleton_ of components. _*react-skeleton*_ is usefull to show a loading in react components.
 
+### Examples
+
+#### Using LinearGradientSkeleton
+
+![images](./images/linear-rounded-ex.png)
+
+#### Using Skeleton
+
+![images](./images/normal-rounded-ex.gif)
+
 ### Installing
 
 ```
+
 npm install react-skeleton --save
 
 OR
 
 yarn add react-skeleton --save
+
 ```
 
 ### Usage
