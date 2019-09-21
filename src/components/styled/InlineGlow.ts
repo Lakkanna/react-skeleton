@@ -1,21 +1,24 @@
-import React from "react";
-// @ts-ignore
-import styled from "styled-components";
+import styled, { css, keyframes } from "styled-components";
+
+const animation = keyframes`
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+`;
+
+const animationRule = css`
+  ${animation} 1.5s ease-in-out infinite;
+`;
 
 const InlineGlow = styled.div`
-  animation: glow 1.5s ease-in-out infinite;
+  animation: ${animationRule};
   color: transparent;
   cursor: progress;
-  border-radius: 40px;
-  @keyframes glow {
-    0%,
-    100% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.4;
-    }
-  }
 `;
 
 export { InlineGlow };
