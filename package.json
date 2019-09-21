@@ -1,5 +1,5 @@
 {
-  "name": "skeleton-react",
+  "name": "react-skeleton",
   "version": "1.0.0",
   "description": "Skeleton loading for react",
   "main": "./dist/index.js",

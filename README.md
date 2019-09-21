@@ -8,9 +8,13 @@ We all know that without loader in _React_ components, user interface will not c
 
 ![images](./images/linear-rounded-ex.png)
 
+<a href="#linear-gradient-example"> see code </a>
+
 #### Using Skeleton
 
 ![images](./images/normal-rounded-ex.gif)
+
+<a href="#normal-skeleton-example"> see code </a>
 
 ### Installing
 
@@ -113,6 +117,16 @@ export const GoodLoader = () => {
   </table>
 
 </details>
+
+### Examples code
+
+<h3 id="linear-gradient-example"> Linear Gradient Skeleton Example </h2>
+
+![linear-gradient-example](./images/linear-gradient-example.png)
+
+<h3 id="normal-skeleton-example"> Normal Skeleton Example </h2>
+
+![linear-gradient-example](./images/skeleton-example.png)
 
 ## Contributing
 
