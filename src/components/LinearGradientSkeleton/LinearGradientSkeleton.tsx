@@ -5,21 +5,16 @@ import getGradientColors, {
   GradientType
 } from "../../common/getGradientColors";
 import { Style, SkeletonProps } from "../../types/common";
-import { defaultProps } from "../Skeleton/Skeleton";
+
+interface LinearGradientStyle extends Style {
+  backgroundImage?: string;
+}
 
 interface LinearGradientSkeletonProps extends SkeletonProps {
   gradientType?: GradientType;
   gradientColors?: string[];
+  style?: LinearGradientStyle;
 }
-
-interface LinearGradientStyle extends Style {
-  backgroundImage: string;
-}
-
-export const linearGradientDefaultProps = {
-  ...defaultProps,
-  gradientType: "dimigo"
-};
 
 export default class LinearGradientSkeleton extends Component<
   LinearGradientSkeletonProps,
@@ -28,7 +23,12 @@ export default class LinearGradientSkeleton extends Component<
   constructor(props: LinearGradientSkeletonProps) {
     super(props);
   }
-  static defaultProps = { ...linearGradientDefaultProps };
+
+  static defaultProps = {
+    rounded: false,
+    gradientType: "dimigo",
+    style: {}
+  };
 
   shouldComponentUpdate() {
     return false;

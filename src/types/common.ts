@@ -1,11 +1,11 @@
 export interface Style {
-  width: number;
-  height: number;
-  background: string;
+  width?: number;
+  height?: number;
+  background?: string;
   borderRadius?: string;
 }
 
 export interface SkeletonProps {
-  style: Style;
-  rounded: boolean;
+  style?: Style;
+  rounded?: boolean;
 }

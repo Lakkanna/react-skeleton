@@ -4,8 +4,9 @@
   "description": "Skeleton loading for react",
   "main": "./dist/index.js",
   "scripts": {
-    "start": "webpack --watch",
-    "build": "webpack"
+    "clean-dist": "rm -rf ./dist",
+    "start": "npm run clean-dist && webpack --watch",
+    "build": "npm run clean-dist && webpack"
   },
   "repository": {
     "type": "git",

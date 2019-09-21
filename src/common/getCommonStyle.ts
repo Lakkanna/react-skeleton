@@ -1,10 +1,16 @@
 import { getMaxSize } from "./utils";
 import { Style, SkeletonProps } from "../types/common";
 
-// TODO replace any with actual type of style attributes
+// TODO replace style with actual type of style attributes
 const getCommonStyle = ({ rounded, style }: SkeletonProps): Style => {
-  let newStyleObject = style;
-  if (rounded) {
+  const defaultStyle = {
+    width: 100,
+    height: 100,
+    background: "#DDDDDD"
+  };
+
+  let newStyleObject = { ...defaultStyle, ...style };
+  if (rounded === true) {
     const maxSize = getMaxSize(style.width, style.height);
     newStyleObject.width = maxSize;
     newStyleObject.height = maxSize;
