@@ -49,12 +49,19 @@ export const GoodLoader = () => {
     <th> values </th>
     <th> default value </th>
     <th> description </th>
-     <tr>
+    <tr>
       <td> rounded </td>
       <td> boolean </td>
       <td> true/false </td>
       <td> false </td>
       <td> show a circle instead of rectangle </td>    
+    </tr>
+    <tr>
+      <td> color </td>
+      <td> string </td>
+      <td> any color code/name </td>
+      <td> #DDDDDD </td>
+      <td> color for skeleton </td>    
     </tr>
     <tr>
       <td> style </td>
