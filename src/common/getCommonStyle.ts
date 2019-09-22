@@ -1,17 +1,25 @@
 import { getMaxSize } from "./utils";
-import { Style, SkeletonProps } from "../types/common";
+import { SkeletonProps } from "../types/common";
 
-// TODO replace style with actual type of style attributes
-const getCommonStyle = ({ rounded, style }: SkeletonProps): Style => {
+const getCommonStyle = ({
+  rounded,
+  style,
+  color
+}: SkeletonProps): React.CSSProperties => {
   const defaultStyle = {
     width: 100,
-    height: 100,
-    background: "#DDDDDD"
+    height: 100
   };
 
-  let newStyleObject = { ...defaultStyle, ...style };
+  let background = "#DDDDDD";
+  if (color) {
+    background = color;
+  }
+
+  let newStyleObject = { ...defaultStyle, ...style, background };
   if (rounded === true) {
-    const maxSize = getMaxSize(style.width, style.height);
+    // @ts-ignore
+    const maxSize = getMaxSize(style.width, style.height); // TODO make this should accept string or number
     newStyleObject.width = maxSize;
     newStyleObject.height = maxSize;
     newStyleObject.borderRadius = "100%";

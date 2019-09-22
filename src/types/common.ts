@@ -1,11 +1,5 @@
-export interface Style {
-  width?: number;
-  height?: number;
-  background?: string;
-  borderRadius?: string;
-}
-
 export interface SkeletonProps {
-  style?: Style;
+  style?: React.CSSProperties;
   rounded?: boolean;
+  color?: string;
 }

@@ -4,16 +4,12 @@ import getCommonStyle from "../../common/getCommonStyle";
 import getGradientColors, {
   GradientType
 } from "../../common/getGradientColors";
-import { Style, SkeletonProps } from "../../types/common";
-
-interface LinearGradientStyle extends Style {
-  backgroundImage?: string;
-}
+import { SkeletonProps } from "../../types/common";
 
 interface LinearGradientSkeletonProps extends SkeletonProps {
   gradientType?: GradientType;
   gradientColors?: string[];
-  style?: LinearGradientStyle;
+  style?: React.CSSProperties;
 }
 
 export default class LinearGradientSkeleton extends Component<
@@ -34,9 +30,9 @@ export default class LinearGradientSkeleton extends Component<
     return false;
   }
 
-  getLinearStyle = (): LinearGradientStyle => {
+  getLinearStyle = (): React.CSSProperties => {
     const commonStyle = getCommonStyle(this.props);
-    let linearStyleObject: LinearGradientStyle = {
+    let linearStyleObject: React.CSSProperties = {
       ...commonStyle,
       backgroundImage: ""
     };
