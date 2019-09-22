@@ -16,7 +16,7 @@ export default class Skeleton extends Component<SkeletonProps, {}> {
   render() {
     return (
       <InlineGlow>
-        <div style={getCommonStyle(this.props)} />
+        <div style={getCommonStyle(this.props)}> {this.props.children} </div>
       </InlineGlow>
     );
   }

@@ -55,7 +55,7 @@ export default class LinearGradientSkeleton extends Component<
   render() {
     return (
       <InlineGlow>
-        <div style={this.getLinearStyle()} />
+        <div style={this.getLinearStyle()}> {this.props.children} </div>
       </InlineGlow>
     );
   }
