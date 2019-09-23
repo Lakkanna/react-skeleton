@@ -1,6 +1,6 @@
 {
   "name": "@linja/react-skeleton",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Skeleton loading for react",
   "main": "./dist/index.js",
   "scripts": {
@@ -8,6 +8,9 @@
     "start": "npm run clean-dist && webpack --watch",
     "build": "npm run clean-dist && webpack"
   },
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Lakkanna/react-skeleton.git"
