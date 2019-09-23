@@ -20,11 +20,11 @@ We all know that without loader in _React_ components, user interface will not c
 
 ```
 
-npm install react-skeleton --save
+npm install @linja/react-skeleton --save
 
 OR
 
-yarn add react-skeleton --save
+yarn add @linja/react-skeleton --save
 
 ```
 
@@ -34,7 +34,7 @@ yarn add react-skeleton --save
 
 ```js
 import React from "react";
-import { Skeleton } from "react-skeleton";
+import { Skeleton } from "@linja/react-skeleton";
 
 export const GoodLoader = () => {
   return <Skeleton />;
@@ -77,7 +77,7 @@ export const GoodLoader = () => {
 
 ```js
 import React from "react";
-import { LinearGradientSkeleton } from "react-skeleton";
+import { LinearGradientSkeleton } from "@linja/react-skeleton";
 
 export const GoodLoader = () => {
   return <LinearGradientSkeleton />;

@@ -1,5 +1,5 @@
 {
-  "name": "react-skeleton",
+  "name": "@linja/react-skeleton",
   "version": "1.0.0",
   "description": "Skeleton loading for react",
   "main": "./dist/index.js",
@@ -41,5 +41,6 @@
     "typescript": "3.6.3",
     "webpack": "4.40.2",
     "webpack-cli": "3.3.9"
-  }
+  },
+  "dependencies": {}
 }
