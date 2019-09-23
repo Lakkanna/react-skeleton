@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "baseUrl": "src",
+    "declaration": true,
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "esnext",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "lib": ["es2016", "dom", "es5"],
+    "esModuleInterop": true
+  },
+  "include": ["./src/"],
+  "exclude": ["node_modules", "dist", "__test__"]
+}
