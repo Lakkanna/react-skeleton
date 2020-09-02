@@ -17,5 +17,6 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - name: Read package
+
+      - name: Read app.json
         run: node ./scripts/actions.js
