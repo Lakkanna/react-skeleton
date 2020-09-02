@@ -6,7 +6,7 @@
   "scripts": {
     "clean-dist": "rm -rf ./dist",
     "start": "npm run clean-dist && webpack --watch",
-    "build": "npm run clean-dist && webpack"
+    "build": "npm run clean-dist && webpack",
   },
   "files": [
     "dist"
