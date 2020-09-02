@@ -21,6 +21,6 @@ fs.readFile(path.join('app.json'), 'utf-8', (error, dataString) => {
   const data = JSON.parse(dataString);
   console.log('VERSION: ', data.version);
   const versions = data.version.split('.');
-  const newVersios = bumpUpVersion(versions, false);
+  const newVersions = bumpUpVersion(versions, false);
   console.log('NEW VERSION: ', newVersions.joint('.'));
 })
