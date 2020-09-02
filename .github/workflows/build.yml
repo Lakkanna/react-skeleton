@@ -20,3 +20,7 @@ jobs:
 
       - name: Bump up app version in app.json
         run: node ./scripts/actions.js
+
+      - name: Commit and push app.json
+        run: node ./scripts/actions.js
+
